@@ -1,0 +1,34 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-container {
+  position: absolute;
+  top: 4em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.top-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: .2em;
+  height: 4em;
+}
+
+.left-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  background: rgba(222, 222, 222, 0.1);
+}
+
+.sidenav-navigation {
+  margin-top: .1em;
+  display: flex;
+  flex-direction: column;
+}

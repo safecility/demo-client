@@ -1,0 +1,6 @@
+[submodule "node/core"]
+	path = node/core
+	url = https://github.com/safecility/node-safecility-auth
+[submodule "angular/projects/safecility-auth"]
+	path = angular/projects/safecility-auth
+	url = https://github.com/safecility/ng-safecility-auth

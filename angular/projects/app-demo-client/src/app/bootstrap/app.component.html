@@ -1,0 +1,24 @@
+<mat-toolbar class="top-toolbar">
+  <mat-toolbar-row>
+    <span>App Demo</span><span class="toolbar-spacer"></span>
+    <lib-account-box (userChange)="userChanged($event)"></lib-account-box>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav *ngIf="user" mode="side" opened class="left-sidenav"
+               [fixedInViewport]="true" [fixedTopGap]="62"
+               [fixedBottomGap]="0">
+    <span class="sidenav-navigation">
+      <a [routerLink]="['/dashboard']">Dashboard</a>
+      <a [routerLink]="['/users']">Users</a>
+    </span>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <router-outlet />
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

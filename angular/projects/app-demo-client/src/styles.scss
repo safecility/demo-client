@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+
+.loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+  margin: 0;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+$default-color: #eae8e8;
+$card-color: white;
+$border: darkgray;
+$nav-color: #f2f2f2;
+
+$main-title-background: $nav-color;
+$title-header-background: $card-color;
+$content-background: $card-color;
+$main-background: $default-color;
+// $sidenav-content-background: #c7b42c;
+$sidenav-content-background: $default-color;
+$title-header-border: $border;
+$toolbar-background: $card-color;
+$flex-row-background: $default-color;
+$divider-background: $default-color;
+$full-divider-background: $default-color;
+$main-content-background: $default-color;
+$rail-background: $nav-color;
+
+$widget-content-background: $card-color;
+$widget-main-background: $card-color;
+
+$header-item-1: #96ccff;
+$header-item-2: #7a450c;
+
+mat-sidenav-content {
+  // Current issue spotted: the class .mat-drawer-content is overriding this style - apply this style in the relevant component stylesheet or add suffix !important here to solve this issue
+  display: flex !important;
+  flex-direction: column;
+  background: $sidenav-content-background;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

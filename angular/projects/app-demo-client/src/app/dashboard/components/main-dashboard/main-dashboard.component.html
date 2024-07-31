@@ -1,0 +1,9 @@
+<h1>Dashboard</h1>
+
+<ng-container *ngIf="appViews">
+  <h2>App Views</h2>
+  <ng-container *ngFor="let view of appViews | keyvalue">
+    <h3>{{view.key}}</h3>
+    {{view.value | json}}
+  </ng-container>
+</ng-container>
